@@ -3,8 +3,6 @@
 ## Overview
 The Book Recommender System is an innovative project designed to provide personalized book recommendations based on user preferences and reading history. Utilizing machine learning algorithms and data analysis techniques, this system enhances the reading experience by suggesting books that align with a user's interests.
 
-![Book Recommender System](https://i.imgur.com/yourImageURL.png) <!-- Example Image URL from Imgur -->
-
 ## Features
 - **Personalized Recommendations**: Users receive book suggestions tailored to their tastes.
 - **User-Friendly Interface**: An intuitive interface for easy navigation and interaction.
@@ -22,19 +20,19 @@ The Book Recommender System is an innovative project designed to provide persona
 ## Installation
 To run the project locally, follow these steps:
 1. Clone the repository:
-   ```bash
+   ```
    git clone https://github.com/yourusername/book-recommender-system.git
    ```
 2. Navigate to the project directory:
-   ```bash
+   ```
    cd book-recommender-system
    ```
 3. Install the required dependencies:
-   ```bash
+   ```
    pip install -r requirements.txt
    ```
 4. Start the application:
-   ```bash
+   ```
    python app.py
    ```
 
@@ -46,13 +44,4 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 Special thanks to the open-source community for their invaluable resources and support in building this project.
-
----
-
-### Example Image
-
-For demonstration, you can use this example image:
-- ![Example Image](https://i.imgur.com/8t8cNz5.png)
-
-Replace the placeholder `https://i.imgur.com/yourImageURL.png` with any actual image URL you find suitable for your project.
 
