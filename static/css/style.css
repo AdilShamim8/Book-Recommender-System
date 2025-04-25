@@ -1,0 +1,186 @@
+body {
+    background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.8)), url('https://galeriemagazine.com/wp-content/uploads/2018/05/StuttgartSelect.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccffff;
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    background-color: rgba(30, 30, 30, 0.9) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    transition: color 0.3s;
+    color: #ccffff;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #6200ee;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 80%;
+    left: 10%;
+}
+
+.card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    background-color: rgba(30, 30, 30, 0.85);
+    color: #ccffff;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1, h2, .card-title {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background-color: #b4faffc4;
+    border-color: #cbe9ecc2;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #7c4dff;
+    border-color: #7c4dff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form-select, .form-control {
+    background-color: rgba(45, 45, 45, 0.9);
+    border-color: #444;
+    color: #ccffff;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: #6200ee;
+    box-shadow: 0 0 0 0.25rem rgba(98, 0, 238, 0.25);
+    background-color: rgba(45, 45, 45, 0.95);
+    color: #ccffff;
+}
+
+.form-select option {
+    background-color: #2d2d2d;
+    color: #ccffff;
+}
+
+.form-label {
+    color: #ccffff;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+.container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.display-4 {
+    background: linear-gradient(90deg, #b2e9ff, #a5e9e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 1.4rem;
+}
+
+.home-card {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.home-card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(98, 0, 238, 0.2) 0%, transparent 50%, transparent 100%);
+    transition: all 0.6s ease;
+}
+
+.home-card:hover::before {
+    top: 0;
+    left: 0;
+}
+
+/* For book list pages */
+.book-item {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+} 
