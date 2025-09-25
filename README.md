@@ -85,7 +85,7 @@ The recommendation system is built using the following datasets:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
-- [Adil Shamim](dilshamim.me)
+- [Adil Shamim](https://adilshamim.me/)
 
 ## Acknowledgements
 - [Goodreads](https://www.goodreads.com/) for the inspiration
