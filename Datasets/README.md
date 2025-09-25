@@ -1,1 +1,1 @@
-Kaggle: https://www.kaggle.com/datasets/adilshamim8/books-datasets
+Kaggle: https://www.kaggle.com/datasets/mdhamani/goodreads-books-100k
