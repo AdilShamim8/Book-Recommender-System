@@ -1,8 +1,6 @@
 # Book Recommender System
 
-![Book Recommender](https://github.com/AdilShamim8/Book-Recommender-System/raw/main/Website/static/images/logo.png)
-
-## 📚 Overview
+## Overview
 A machine learning-powered Book Recommender System that provides personalized book recommendations to users based on their reading preferences and habits. The system uses collaborative filtering and content-based filtering techniques to suggest books that align with users' interests.
 
 ## Live Demo
@@ -15,7 +13,7 @@ A machine learning-powered Book Recommender System that provides personalized bo
 - **Diverse Book Collection**: Access recommendations from a vast library of books across various genres
 - **Real-time Processing**: Quickly generate recommendations using optimized algorithms
 
-## 🛠️ Technologies Used
+## Technologies Used
 - **Python**: Core programming language
 - **Scikit-learn**: For implementing machine learning algorithms
 - **Pandas**: For data manipulation and analysis
@@ -24,7 +22,7 @@ A machine learning-powered Book Recommender System that provides personalized bo
 - **HTML/CSS/JavaScript**: Front-end development
 - **Render**: Hosting platform for deployment
 
-## 🚀 Installation & Setup
+## Installation & Setup
 1. Clone the repository
 ```bash
 git clone https://github.com/AdilShamim8/Book-Recommender-System.git
@@ -49,7 +47,7 @@ python app.py
 
 5. Open your browser and navigate to `http://localhost:5000`
 
-## 📂 Project Structure
+## Project Structure
 ```
 Book-Recommender-System/
 ├── Datasets/               # Contains book data and user ratings
@@ -62,7 +60,7 @@ Book-Recommender-System/
 └── README.md               # Project documentation
 ```
 
-## 🔍 How It Works
+## How It Works
 The recommender system works by analyzing patterns in user ratings and book metadata. It employs two main approaches:
 
 1. **Collaborative Filtering**: Recommends books based on user similarity
@@ -70,26 +68,26 @@ The recommender system works by analyzing patterns in user ratings and book meta
 
 The system processes user input, compares it against the trained model, and generates a list of recommended books that the user might enjoy.
 
-## 📊 Dataset
+## Dataset
 The recommendation system is built using the following datasets:
 - Books metadata (titles, authors, publishers, etc.)
 - User ratings and reviews
 - Book categories and genres
 
-## 🔜 Future Improvements
+## Future Improvements
 - Implement hybrid recommendation techniques
 - Add user authentication and profiles
 - Incorporate natural language processing for review analysis
 - Enhance mobile responsiveness
 - Add book availability from various online stores
 
-## 📄 License
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-- [Adil Shamim](https://github.com/AdilShamim8)
+## Author
+- [Adil Shamim](dilshamim.me)
 
-## 🙏 Acknowledgements
+## Acknowledgements
 - [Goodreads](https://www.goodreads.com/) for the inspiration
 - All the open-source libraries that made this project possible
 - Dataset providers for making the book data accessible for analysis
