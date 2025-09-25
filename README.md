@@ -5,7 +5,7 @@
 [![Flask](https://img.shields.io/badge/flask-3.0.3-lightgrey)](https://flask.palletsprojects.com/)  
 [![Scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-green)](https://scikit-learn.org/)
 
-**Live Demo:** [https://adil-book-recommender.onrender.com](https://adil-book-recommender-r87e.onrender.com/)
+**Live Demo:** [https://adil-book-recommender8.onrender.com/](https://adil-book-recommender8.onrender.com/)
 
 ---
 
