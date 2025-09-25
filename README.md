@@ -1,185 +1,99 @@
 # Book Recommender System
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)  
-[![Notebook](https://img.shields.io/badge/jupyter-notebook-orange)](https://jupyter.org/)  
-[![Flask](https://img.shields.io/badge/flask-3.0.3-lightgrey)](https://flask.palletsprojects.com/)  
-[![Scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-green)](https://scikit-learn.org/)
+![Book Recommender](https://github.com/AdilShamim8/Book-Recommender-System/raw/main/Website/static/images/logo.png)
 
-**Live Demo:** [https://adil-book-recommender8.onrender.com/](https://adil-book-recommender8.onrender.com/)
+## 📚 Overview
+A machine learning-powered Book Recommender System that provides personalized book recommendations to users based on their reading preferences and habits. The system uses collaborative filtering and content-based filtering techniques to suggest books that align with users' interests.
 
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Technologies](#technologies)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
-- [Project Structure](#project-structure)
-- [Datasets](#datasets)
-- [Model](#model)
-- [Web Application](#web-application)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
----
-
-## Overview
-
-The **Book Recommender System** is an end-to-end project that leverages machine learning algorithms to deliver personalized book recommendations. By analyzing user preferences and reading history, the system suggests books tailored to individual tastes, improving discovery and reader satisfaction.
-
----
+## Live Demo
+[Book Recommender System](https://adil-book-recommender8.onrender.com/)
 
 ## Features
+- **Personalized Recommendations**: Get book suggestions tailored to your reading history and preferences
+- **Similar Book Discovery**: Find books similar to ones you've enjoyed in the past
+- **User-friendly Interface**: Simple and intuitive design for seamless navigation
+- **Diverse Book Collection**: Access recommendations from a vast library of books across various genres
+- **Real-time Processing**: Quickly generate recommendations using optimized algorithms
 
-- **Personalized Recommendations:** Suggestions based on both collaborative filtering and popularity metrics.
-- **Hybrid Recommendation Engine:** Combines popularity-based and collaborative filtering methods for balanced results.
-- **Interactive Feedback:** Users can rate recommendations to refine future suggestions.
-- **Restful Web API:** Provides endpoints for integration with other services or front-ends.
-- **Live Deployment:** Hosted on Render with automatic updates.
+## 🛠️ Technologies Used
+- **Python**: Core programming language
+- **Scikit-learn**: For implementing machine learning algorithms
+- **Pandas**: For data manipulation and analysis
+- **NumPy**: For numerical computing
+- **Flask**: Web framework for building the application
+- **HTML/CSS/JavaScript**: Front-end development
+- **Render**: Hosting platform for deployment
 
----
+## 🚀 Installation & Setup
+1. Clone the repository
+```bash
+git clone https://github.com/AdilShamim8/Book-Recommender-System.git
+cd Book-Recommender-System
+```
 
-## Architecture
+2. Create and activate a virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-![Architecture Diagram](docs/architecture-diagram.png)
+3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-1. **Data Layer:** CSV datasets stored in `Datasets/`, sourced from [Kaggle](https://www.kaggle.com/datasets/adilshamim8/books-datasets).
-2. **Model Layer:** Jupyter Notebook in `Model/` for preprocessing, training, and persisting models (`popularity_model.pkl`, `collab_model.pkl`).
-3. **Application Layer:** Flask app in `Website/` exposing recommendation endpoints and rendering HTML templates.
+4. Run the application
+```bash
+python app.py
+```
 
----
+5. Open your browser and navigate to `http://localhost:5000`
 
-## Technologies
-
-- **Python 3.8+**
-- **Pandas & NumPy** for data manipulation
-- **Scikit-learn** for model training
-- **Joblib** for model serialization
-- **Flask** for web application
-- **Jinja2** templating
-- **Bootstrap 5** for UI styling
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.8 or higher
-- Git
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/AdilShamim8/Book-Recommender-System.git
-   cd Book-Recommender-System
-   ```
-
-2. **Navigate to the Website folder**
-   ```bash
-   cd Website
-   ```
-
-3. **Create and activate a virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-4. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-
-### Running the Application
-
-1. **Start the Flask server**
-   ```bash
-   flask run --host=0.0.0.0 --port=5000
-   ```
-
-2. **Open your browser** and navigate to `http://localhost:5000` to interact with the recommender.
-
----
-
-## Project Structure
-
+## 📂 Project Structure
 ```
 Book-Recommender-System/
-├── Datasets/             # Raw CSV files and dataset metadata
-├── Model/                # Jupyter Notebook for training & model artifacts
-│   └── book-recommender-system.ipynb
-├── Website/              # Flask web application
-│   ├── app.py
-│   ├── requirements.txt
-│   ├── collab_model.pkl
-│   ├── popularity_model.pkl
-│   ├── templates/        # Jinja2 HTML templates
-│   └── static/           # CSS & JS assets
-└── README.md             # Project overview and setup instructions
+├── Datasets/               # Contains book data and user ratings
+├── Model/                  # ML models and preprocessing scripts
+├── Website/                # Frontend implementation
+│   ├── static/             # CSS, JS, and image files
+│   ├── templates/          # HTML templates
+│   └── app.py              # Flask application
+├── LICENSE                 # License information
+└── README.md               # Project documentation
 ```
 
----
+## 🔍 How It Works
+The recommender system works by analyzing patterns in user ratings and book metadata. It employs two main approaches:
 
-## Datasets
+1. **Collaborative Filtering**: Recommends books based on user similarity
+2. **Content-Based Filtering**: Recommends books with similar content features
 
-The book dataset is hosted on Kaggle and contains over 100,000 book entries with features such as title, author, genre, ratings, and description.
+The system processes user input, compares it against the trained model, and generates a list of recommended books that the user might enjoy.
 
-- **Kaggle Link:** https://www.kaggle.com/datasets/adilshamim8/books-datasets
+## 📊 Dataset
+The recommendation system is built using the following datasets:
+- Books metadata (titles, authors, publishers, etc.)
+- User ratings and reviews
+- Book categories and genres
 
----
+## 🔜 Future Improvements
+- Implement hybrid recommendation techniques
+- Add user authentication and profiles
+- Incorporate natural language processing for review analysis
+- Enhance mobile responsiveness
+- Add book availability from various online stores
 
-## Model
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Model training and evaluation are performed in the Jupyter Notebook located in the `Model/` directory. The notebook covers:
+## 👨‍💻 Author
+- [Adil Shamim](https://github.com/AdilShamim8)
 
-- Data cleaning and preprocessing
-- Feature engineering
-- Training popularity-based and collaborative filtering models
-- Model evaluation and selection
-- Exporting trained models to `Website/` for deployment
-
----
-
-## Web Application
-
-The Flask application in the `Website/` folder provides:
-
-- **Home Page:** Displays popular book recommendations
-- **User Portal:** Allows users to input book preferences and receive recommendations
-- **API Endpoints:** `/recommend/popular` and `/recommend/collaborative` for programmatic access
-
----
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
+## 🙏 Acknowledgements
+- [Goodreads](https://www.goodreads.com/) for the inspiration
+- All the open-source libraries that made this project possible
+- Dataset providers for making the book data accessible for analysis
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Contact
-
-* **Author:** Adil Shamim
-* **Email:** [adilshamim696@gmail,com]
-* **Website:** adilshamim.me
-
+If you find this project helpful, please consider giving it a star! ⭐
