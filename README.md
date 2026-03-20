@@ -118,13 +118,6 @@ The system leverages comprehensive book datasets containing:
 - **Popularity Metrics**: Books sorted by user engagement and ratings
 
 All data is pre-processed and vectorized using TF-IDF to enable efficient similarity computations.
-```
-Book-Recommender-System/
-├── Datasets/               # Contains book data and user ratings
-├── Model/                  # ML models and preprocessing scripts
-├── Website/                # Frontend implementation
-│  Roadmap & Future Improvements
-
 - [ ] **Hybrid Recommendations**: Combine collaborative + content-based filtering
 - [ ] **User Authentication**: Persistent user profiles and history
 - [ ] **Advanced NLP**: Sentiment analysis on book reviews
