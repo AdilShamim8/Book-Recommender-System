@@ -137,61 +137,11 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author & Contact
-
-**Adil Shamim**  
-🌐 [Portfolio](https://adilshamim.me/)  
-📧 [Email](mailto:adil@example.com)  
-🐙 [GitHub](https://github.com/AdilShamim8)
-
 ## Acknowledgements
 
 - [Goodreads](https://www.goodreads.com/) for inspiring this project
 - Open-source community for excellent libraries (Flask, Scikit-learn, Pandas, etc.)
 - Dataset providers for making book data accessible
 - Render platform for hosting support
-
----
-
-## Support
-
-If you find this project helpful, please consider:
-- ⭐ Giving it a star on GitHub
-- 🐳 Using the Docker Hub image
-- 📢 Sharing it with others
-- 🐛 Reporting issues or suggesting improvements
-
-**Happy Reading! 📚**d book metadata. It employs two main approaches:
-
-1. **Collaborative Filtering**: Recommends books based on user similarity
-2. **Content-Based Filtering**: Recommends books with similar content features
-
-The system processes user input, compares it against the trained model, and generates a list of recommended books that the user might enjoy.
-
-## Dataset
-The recommendation system is built using the following datasets:
-- Books metadata (titles, authors, publishers, etc.)
-- User ratings and reviews
-- Book categories and genres
-
-## Future Improvements
-- Implement hybrid recommendation techniques
-- Add user authentication and profiles
-- Incorporate natural language processing for review analysis
-- Enhance mobile responsiveness
-- Add book availability from various online stores
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-- [Adil Shamim](https://adilshamim.me/)
-
-## Acknowledgements
-- [Goodreads](https://www.goodreads.com/) for the inspiration
-- All the open-source libraries that made this project possible
-- Dataset providers for making the book data accessible for analysis
-
----
 
 If you find this project helpful, please consider giving it a star! ⭐
